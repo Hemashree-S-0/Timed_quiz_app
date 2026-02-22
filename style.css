@@ -1,0 +1,81 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #101820;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.quiz-container {
+  background: #1e293b;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress {
+  width: 70%;
+}
+.progress-bar {
+  background: #334155;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#progress-fill {
+  background: #3b82f6;
+  width: 0%;
+  height: 100%;
+}
+.timer {
+  background: #3b82f6;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#options {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.option {
+  background: #334155;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.option.selected {
+  background-color: #2196f3;
+  color: white;
+}
+.option:hover {
+  background: #475569;
+}
+
+.btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.hidden {
+  display: none;
+}
