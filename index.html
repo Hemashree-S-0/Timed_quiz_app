@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timed Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>🧠 Timed Quiz App</h1>  
+    <div id="start-box">
+      <button id="start-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-box" class="hidden">
+      <div class="quiz-header">
+        <div class="progress">
+          <span id="progress-text"></span>
+            <div class="progress-bar">
+            <div id="progress-fill"></div>
+          </div>
+        </div>
+        <div class="timer" id="timer"></div>
+      </div>
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <button id="next-btn" class="btn">Next</button>
+    </div>
+    <div id="result-box" class="hidden">
+      <h2>🎉 Quiz Completed!</h2>
+      <p id="score-text"></p>
+      <button id="restart-btn" class="btn">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
